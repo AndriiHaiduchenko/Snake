@@ -11,7 +11,14 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hisnake");
+            Draw(2,3,'@');
+            Draw(3, 4, '#');
+        }
+
+        static void Draw(int x, int y, char symbol)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(symbol);
         }
     }
 }
